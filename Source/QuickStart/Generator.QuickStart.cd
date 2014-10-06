@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Generator.QuickStart.Base.BaseTemplate">
+    <Position X="4.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAgAAEAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Base\BaseTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Generator.QuickStart.Base.MasterTemplate">
+    <Position X="2.75" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAQAAAAAAAAAAAIAAAAAAQAEAAACAABA=</HashCode>
+      <FileName>Base\MasterTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Generator.QuickStart.EntityCodeTemplate">
+    <Position X="5.75" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>EAAAIAAAAAAAAAAAAGAACAAAAAAAAAAAAICAEAACAAA=</HashCode>
+      <FileName>EntityCodeTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Generator.QuickStart.DataProjectCreator">
+    <Position X="16.25" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAgAAAAABAA=</HashCode>
+      <FileName>Creators\DataProjectCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Generator.QuickStart.WebSiteCreator">
+    <Position X="12" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAgAAAAAAAAAEAAABAA=</HashCode>
+      <FileName>Creators\WebSiteCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Generator.QuickStart.PathHelper">
+    <Position X="12" Y="2.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Creators\PathHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Generator.QuickStart.ProjectBuilderSettings">
+    <Position X="9.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAASAwEBAAAASIAQCAGAAAAACAAAACAAAQJgUA=</HashCode>
+      <FileName>Creators\ProjectBuilderSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Generator.QuickStart.ProjectCreator">
+    <Position X="15.5" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAACABCAAQCBSAAABAACAAgIAgAAAgAAEAUQDAA=</HashCode>
+      <FileName>Creators\ProjectCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Generator.QuickStart.QuickStartUtils">
+    <Position X="12" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAIKAAAAAAAAAAAAAAAAEEA=</HashCode>
+      <FileName>Creators\QuickStartUtils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Generator.QuickStart.SolutionItem">
+    <Position X="18.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAgAIAAAAAAAQAAAgABAAAAAIAAAAAAAg=</HashCode>
+      <FileName>Creators\SolutionItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Generator.QuickStart.TestProjectCreator">
+    <Position X="18.25" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Creators\TestProjectCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Generator.QuickStart.WebApplicationCreator">
+    <Position X="14" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAEAAABAA=</HashCode>
+      <FileName>Creators\WebApplicationCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Generator.QuickStart.LanguageEnum">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Generator.QuickStart.ProjectTypeEnum">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAg=</HashCode>
+      <FileName>Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Generator.QuickStart.QueryPatternEnum">
+    <Position X="2.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Generator.QuickStart.FrameworkVersion">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

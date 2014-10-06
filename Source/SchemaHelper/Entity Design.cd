@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CodeSmith.SchemaHelper.EntityBase&lt;T&gt;">
+    <Position X="11" Y="0.5" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EBAAKAAIsBAkJQQEoQGGggYgmQAAYAkACAIQAYBCgQQ=</HashCode>
+      <FileName>Bases\EntityBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CodeSmith.SchemaHelper.EntityKey">
+    <Position X="9" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>EntityKey.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CodeSmith.SchemaHelper.Association">
+    <Position X="14" Y="0.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EAAAIQAAgACkEAQEAAFBAgABkIAAIAAACBAABIBCgAA=</HashCode>
+      <FileName>Association.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CodeSmith.SchemaHelper.AssociationProperty">
+    <Position X="14" Y="6.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQQAAAAAAAAAAAIAAAAAAAAAAQAAAQA=</HashCode>
+      <FileName>AssociationProperty.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CodeSmith.SchemaHelper.TableEntity">
+    <Position X="8.25" Y="8" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACAgKA1AAIBQAAAAAGAAIABQAAAQUAAAAAAAAAEAA=</HashCode>
+      <FileName>SchemaExplorer\TableEntity.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CodeSmith.SchemaHelper.TableProperty">
+    <Position X="5.75" Y="8" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACIAAQCQgAAAAAAAABIAAAAAAAAACAAEAAA=</HashCode>
+      <FileName>SchemaExplorer\TableProperty.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="CodeSmith.SchemaHelper.ICommonEntityProperty">
+    <Position X="2.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAkAQAEAAEAAAQAAAAAAAAAAAAAAIBAAAA=</HashCode>
+      <FileName>Interfaces\ICommonEntityProperty.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CodeSmith.SchemaHelper.IEntity">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAKAAAIBAAIAQAAQAAAAAggQAAIAgAAAAQAAACgQA=</HashCode>
+      <FileName>Interfaces\IEntity.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CodeSmith.SchemaHelper.IKey">
+    <Position X="8.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Interfaces\IKey.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CodeSmith.SchemaHelper.IProperty">
+    <Position X="0.5" Y="2.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>EAAACAAAABIAgAAEAAIAAACAQABAAAAAAAACAAAgcCA=</HashCode>
+      <FileName>Interfaces\IProperty.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CodeSmith.SchemaHelper.ISchemaEntity">
+    <Position X="5.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SchemaExplorer\Interfaces\ISchemaEntity.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CodeSmith.SchemaHelper.ISchemaProperty">
+    <Position X="2.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACIAAACQgAAAAAAAABIAAAAAAAAACAAEAAA=</HashCode>
+      <FileName>SchemaExplorer\Interfaces\ISchemaProperty.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
