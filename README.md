@@ -17,4 +17,4 @@ Requirements
 
 About
 ==
-This library has evolved since mid 2009 and was created by (Blake Niemyjski)[https://github.com/niemyjski] and with the ocassional help of Jeffrey Hinnen (rockstar).
+This library has evolved since mid 2009 and was created by [Blake Niemyjski](https://github.com/niemyjski) and with the ocassional help of Jeffrey Hinnen (rockstar).
