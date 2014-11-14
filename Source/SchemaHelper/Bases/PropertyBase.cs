@@ -22,7 +22,7 @@ namespace CodeSmith.SchemaHelper {
         private string _baseSystemType = String.Empty;
         private string _systemTypeWithSize = String.Empty;
         private string _defaultValue;
-        private bool? _isReadOnly;
+        protected bool? _isReadOnly;
         private Dictionary<string, object> _extendedProperties;
 
         #endregion
@@ -133,7 +133,7 @@ namespace CodeSmith.SchemaHelper {
         /// <summary>
         /// Returns true if the property should be treated as read only (Identity, currency, computed column or contains an extended property).
         /// </summary>
-        public bool IsReadOnly {
+        public virtual bool IsReadOnly {
             get {
                 if (!_isReadOnly.HasValue) {
                     _isReadOnly = IsType(PropertyType.Identity) 

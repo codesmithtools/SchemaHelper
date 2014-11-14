@@ -49,11 +49,5 @@ namespace CodeSmith.SchemaHelper {
         /// Is this IProperty a RowVersion column for the Entity.
         /// </summary>
         bool IsRowVersion { get; }
-
-        /// <summary>
-        /// Is this IProperty ReadOnly.
-        /// Computed by looking at IsIdentity, IsRowVersion, and IsComputed.
-        /// </summary>
-        bool IsReadOnly { get; }
     }
 }

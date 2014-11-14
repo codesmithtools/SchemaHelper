@@ -66,11 +66,6 @@ namespace CodeSmith.SchemaHelper {
         /// </summary>
         public bool IsRowVersion { get; internal set; }
 
-        /// <summary>
-        /// Is this IProperty ReadOnly.  Computed by looking at IsIdentity, IsRowVersion, and IsComputed.
-        /// </summary>
-        public bool IsReadOnly { get { return (IsIdentity || IsRowVersion || IsComputed); } }
-
         #endregion
 
         #region Method Overrides
