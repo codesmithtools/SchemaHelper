@@ -281,7 +281,8 @@ namespace CodeSmith.SchemaHelper {
         protected virtual string GetGenericProperty() {
             string genericProperty = String.Empty;
 
-            if (ExtendedProperties.ContainsKey(Configuration.Instance.GenericPropertyExtendedProperty) && ((bool)ExtendedProperties[Configuration.Instance.GenericPropertyExtendedProperty]))
+            object value;
+            if (ExtendedProperties.TryGetValue(Configuration.Instance.GenericPropertyExtendedProperty, out value) && ((bool)value))
                 genericProperty = "<T>";
 
             return genericProperty;

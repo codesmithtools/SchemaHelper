@@ -17,8 +17,9 @@ namespace CodeSmith.SchemaHelper {
             const string key = "CS_FriendlyName";
 
             string name = null;
-            if (property.ExtendedProperties.ContainsKey(key))
-                name = property.ExtendedProperties[key].ToString().Trim();
+            object value;
+            if (property.ExtendedProperties.TryGetValue(key, out value))
+                name = value.ToString().Trim();
 
             return !String.IsNullOrEmpty(name) ? name : property.Name.ToSpacedWords();
         }

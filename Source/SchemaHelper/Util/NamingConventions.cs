@@ -67,8 +67,8 @@ namespace CodeSmith.SchemaHelper.Util {
         /// </summary>
         /// <returns></returns>
         public static string ValidateName(IProperty property) {
-            string className = property.Entity.Name;
-            string name = (property.ExtendedProperties.ContainsKey(Configuration.Instance.AliasExtendedProperty)) ? property.ExtendedProperties[Configuration.Instance.AliasExtendedProperty].ToString() : property.KeyName; // E.G. Column Name
+            object value;
+            string name = (property.ExtendedProperties.TryGetValue(Configuration.Instance.AliasExtendedProperty, out value)) ? value.ToString() : property.KeyName; // E.G. Column Name
 
             string result = PropertyName(name, preserveNaming: Configuration.Instance.NamingProperty.PropertyNaming == PropertyNaming.Preserve);
 
@@ -76,6 +76,7 @@ namespace CodeSmith.SchemaHelper.Util {
             // These characters are stripped by the StringUtil.
             name = !String.IsNullOrEmpty(result) ? result : Configuration.Instance.SingularMemberSuffix;
 
+            string className = property.Entity.Name;
             // Check to see if the column name is prefixed with the table name.
             if (Configuration.Instance.NamingProperty.PropertyNaming == PropertyNaming.NormalizeRemovePrefix) {
                 // Also make sure that the stripped name is at least two characters (E.G CategoryID --> ID).
@@ -97,8 +98,9 @@ namespace CodeSmith.SchemaHelper.Util {
             bool useKeywordRenameAlias = false;
             string className = entity.EntityKeyName;
 
-            if (entity.ExtendedProperties.ContainsKey(Configuration.Instance.AliasExtendedProperty))
-                className = entity.ExtendedProperties[Configuration.Instance.AliasExtendedProperty].ToString();
+            object value;
+            if (entity.ExtendedProperties.TryGetValue(Configuration.Instance.AliasExtendedProperty, out value))
+                className = value.ToString();
             else if (KeywordRenameAlias.ContainsKey(className))
                 className = KeywordRenameAlias[className];
             else {
@@ -196,7 +198,8 @@ namespace CodeSmith.SchemaHelper.Util {
         }
 
         private static string EscapeSystemType(string name) {
-            return SystemTypeEscape.ContainsKey(name) ? SystemTypeEscape[name] : name;
+            string value;
+            return SystemTypeEscape.TryGetValue(name, out value) ? value : name;
         }
 
         /// <summary>

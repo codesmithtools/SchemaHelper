@@ -41,6 +41,11 @@ namespace CodeSmith.SchemaHelper {
         /// </summary>
         string SetterAccess { get; }
 
+        /// <summary>
+        /// Returns true if the property should be treated as read only.
+        /// </summary>
+        bool IsReadOnly { get; }
+
         #endregion
 
         #region Data Type Related

@@ -22,6 +22,7 @@ namespace CodeSmith.SchemaHelper {
             GenericPropertyExtendedProperty = "CS_IsGeneric";
             IsIdentityColumnExtendedProperty = "CS_IsIdentity";
             IsComputedColumnExtendedProperty = "CS_IsComputed";
+            IsReadOnlyColumnExtendedProperty = "CS_IsReadOnly";
 
             VisualStudioVersion = VisualStudioVersion.VS_2013;
             FrameworkVersion = FrameworkVersion.v45;
@@ -149,6 +150,8 @@ namespace CodeSmith.SchemaHelper {
         public string IsIdentityColumnExtendedProperty { get; set; }
 
         public string IsComputedColumnExtendedProperty { get; set; }
+
+        public string IsReadOnlyColumnExtendedProperty { get; set; }
 
         /// <summary>
         /// Set the maximum number of view properties that can be added to the primary keys collection.
