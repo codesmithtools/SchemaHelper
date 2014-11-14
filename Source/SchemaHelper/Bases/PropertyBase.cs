@@ -346,7 +346,7 @@ namespace CodeSmith.SchemaHelper {
                 case PropertyType.NonIdentity:
                     return !PropertyType.IsFlagOn(PropertyType.Identity);
                 case PropertyType.UpdateInsert:
-                    return !PropertyType.IsFlagOn(PropertyType.Identity) && !PropertyType.IsFlagOn(PropertyType.Concurrency) && !PropertyType.IsFlagOn(PropertyType.Computed);
+                    return !PropertyType.IsFlagOn(PropertyType.Identity) && !PropertyType.IsFlagOn(PropertyType.Concurrency) && !PropertyType.IsFlagOn(PropertyType.Computed) && !ExtendedProperties.ContainsKey(Configuration.Instance.IsReadOnlyColumnExtendedProperty);
                 default:
                     return PropertyType.IsAnyFlagOn(type);
             }
