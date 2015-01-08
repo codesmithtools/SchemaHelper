@@ -108,7 +108,9 @@ namespace CodeSmith.SchemaHelper {
         /// </summary>
         /// <returns></returns>
         protected virtual string GetDescription() {
-            return ExtendedProperties.ContainsKey(Configuration.Instance.DescriptionExtendedProperty) ? ExtendedProperties[Configuration.Instance.DescriptionExtendedProperty].ToString().Trim() : String.Empty;
+            return ExtendedProperties.ContainsKey(Configuration.Instance.DescriptionExtendedProperty)
+                ? ExtendedProperties[Configuration.Instance.DescriptionExtendedProperty].ToString().Replace("\r\n", " ").Trim() 
+                : String.Empty;
         }
 
         #endregion

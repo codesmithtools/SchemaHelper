@@ -316,7 +316,7 @@ namespace CodeSmith.SchemaHelper {
             string description = String.Empty;
 
             if (ExtendedProperties.ContainsKey(Configuration.Instance.DescriptionExtendedProperty))
-                description = ExtendedProperties[Configuration.Instance.DescriptionExtendedProperty].ToString().Trim();
+                description = ExtendedProperties[Configuration.Instance.DescriptionExtendedProperty].ToString().Replace("\r\n", " ").Trim();
 
             return description;
         }
