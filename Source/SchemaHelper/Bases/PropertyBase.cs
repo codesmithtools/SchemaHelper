@@ -109,7 +109,7 @@ namespace CodeSmith.SchemaHelper {
         /// <returns></returns>
         protected virtual string GetDescription() {
             return ExtendedProperties.ContainsKey(Configuration.Instance.DescriptionExtendedProperty)
-                ? ExtendedProperties[Configuration.Instance.DescriptionExtendedProperty].ToString().Replace("\r\n", " ").Trim() 
+                ? ExtendedProperties[Configuration.Instance.DescriptionExtendedProperty].ToString().Replace("\r\n", " ").Replace("\n", " ").Trim() 
                 : String.Empty;
         }
 
