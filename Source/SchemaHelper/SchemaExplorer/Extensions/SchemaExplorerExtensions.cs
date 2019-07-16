@@ -147,11 +147,16 @@ namespace CodeSmith.SchemaHelper {
         /// <param name="column"></param>
         /// <returns></returns>
         public static bool IsColumnRowVersion(this IDataObject column) {
-            if (String.Equals(column.NativeType, "rowversion", StringComparison.OrdinalIgnoreCase) //|| String.Equals(column.NativeType, "timestmp", StringComparison.OrdinalIgnoreCase) // IBM
-                || String.Equals(column.NativeType, "timestamp", StringComparison.OrdinalIgnoreCase))
-                return true;
+          if (Configuration.Instance.UseRowVersionRegex)
+          {
+            if (Configuration.Instance.RowVersionColumnRegex.IsMatch(column.Name))
+              return true;
+            else
+              return false;
+          }
 
-            if (Configuration.Instance.UseRowVersionRegex && Configuration.Instance.RowVersionColumnRegex.IsMatch(column.Name))
+          if (String.Equals(column.NativeType, "rowversion", StringComparison.OrdinalIgnoreCase) //|| String.Equals(column.NativeType, "timestmp", StringComparison.OrdinalIgnoreCase) // IBM
+                || String.Equals(column.NativeType, "timestamp", StringComparison.OrdinalIgnoreCase))
                 return true;
 
             return false;
